@@ -10,12 +10,9 @@ This project demonstrates a technical pipeline for industrial asset monitoring. 
 
 ### System Architecture
 ```text
-[Local Workstation] --(API/boto3)--> [Amazon CloudWatch]
-   (VSCode/Python)                       | (Industrial/Boilers)
-   (generate_data.py)                    |
-                                         |
-                                         +-----------+
-                                                     |
-                                            [DynamoDB Table]
-                                            (Historical Audit)
-                                            (Cond/Eff data)
+[Local Workstation] --(boto3 PutMetricData API)--> [Amazon CloudWatch]
+   (VSCode Environment)                                | (Industrial/Boilers)
+   (generate_data.py)                                  |
+                                                       v
+                                            [Custom Dashboard]
+                                            (Conductivity & Efficiency)
