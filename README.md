@@ -6,7 +6,7 @@ This project demonstrates a technical pipeline for industrial asset monitoring. 
 - **Data Source:** Python script simulating boiler sensors (Conductivity/Fouling).
 - **Cloud Integration:** Boto3 SDK pushing metrics to AWS.
 - **Monitoring:** CloudWatch for real-time threshold alerts.
-- **Storage:** DynamoDB for persistent data logging.
+
 
 ### System Architecture
 ```text
